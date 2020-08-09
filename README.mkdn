@@ -64,5 +64,4 @@ Use *ota*.zip for update, use *UNOFFICIAL*.zip for clean install.
 
 Please see the [CyanogenMod Wiki](http://wiki.cyanogenmod.org/) for building instructions.
 
-For more information on this Github Organization and how it is structured, 
-please [read the wiki article](http://wiki.cyanogenmod.org/w/Github_Organization)
+Special thanks for Huawei for mirroring must-have Java 6 runtimes!!! [https://mirrors.huaweicloud.com/java/jdk/6u45-b06/]
