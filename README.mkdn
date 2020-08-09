@@ -35,16 +35,34 @@ To initialize your local repository using the CyanogenMod trees, use a command l
 
 Then to sync up:
 
-    repo sync
+    repo sync --force-sync -f --no-tags
+    
+Then add device tree and kernel:
+
+    git clone https://github.com/TheNikiz/android_kernel_samsung_hawaii.git kernel/samsung/hawaii
+    git clone https://github.com/TheNikiz/android_device_samsung_vivaltonfc3g.git device/samsung/vivaltonfc3g
+
+Extract vendor.7z to vendor folder !!!
+
+Overwrite files with patched files from device/samsung/vivaltonfc3g/patches !!!
+
+Add PRODUCT_PREBUILT_WEBVIEWCHROMIUM=yes to device/samsung/vivaltonfc3g/BoardConfig.mk
+
+Apply microG patch to frameworks/base repo, from frameworks/base folder:
+
+    git apply -p1 kk.patch
+
+Extract libwebviewchromium.7z and copy libwebviewchromium.so to out\target\product\vivaltonfc3g\system\lib during building !!!
+
+Start building:
+
+    . build/envsetup.sh
+    lunch cm_vivaltonfc3g-eng
+    make bacon
+
+Use *ota*.zip for update, use *UNOFFICIAL*.zip for clean install.
 
 Please see the [CyanogenMod Wiki](http://wiki.cyanogenmod.org/) for building instructions.
 
 For more information on this Github Organization and how it is structured, 
 please [read the wiki article](http://wiki.cyanogenmod.org/w/Github_Organization)
-
-Buildbot
---------
-
-All supported devices are built nightly and periodically as changes are committed to ensure the source trees remain buildable.
-
-You can view the current build statuses at [CyanogenMod Jenkins](http://jenkins.cyanogenmod.org/)
