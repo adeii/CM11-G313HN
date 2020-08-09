@@ -40,7 +40,7 @@ Then to sync up:
 Then add device tree and kernel:
 
     git clone https://github.com/TheNikiz/android_kernel_samsung_hawaii.git kernel/samsung/hawaii
-    git clone https://github.com/TheNikiz/android_device_samsung_vivaltonfc3g.git device/samsung/vivaltonfc3g
+    git clone https://github.com/TheNikiz/android_device_samsung_vivaltonfc3g.git device/samsung/vivaltonfc3g -b cm-11.0
 
 Extract vendor.7z to vendor folder !!!
 
