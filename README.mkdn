@@ -51,6 +51,8 @@ Add PRODUCT_PREBUILT_WEBVIEWCHROMIUM=yes to device/samsung/vivaltonfc3g/BoardCon
 Apply microG patch to frameworks/base repo, from frameworks/base folder:
 
     git apply -p1 kk.patch
+    
+Also use "update-api" when you got error for using Fake Packaging/Signature Spoofing...
 
 Extract libwebviewchromium.7z and copy libwebviewchromium.so to out\target\product\vivaltonfc3g\system\lib during building !!!
 
