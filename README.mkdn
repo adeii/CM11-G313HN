@@ -59,7 +59,7 @@ Extract libwebviewchromium.7z and copy libwebviewchromium.so to out\target\produ
 Start building:
 
     . build/envsetup.sh
-    lunch cm_vivaltonfc3g-eng
+    lunch cm_vivaltonfc3g-userdebug
     make bacon
 
 Use *ota*.zip for update, use *UNOFFICIAL*.zip for clean install.
