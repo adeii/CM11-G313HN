@@ -56,6 +56,9 @@ Also use "update-api" when you got error for using Fake Packaging/Signature Spoo
 
 Extract libwebviewchromium.7z and copy libwebviewchromium.so to out\target\product\vivaltonfc3g\system\lib during building !!!
 
+You should add this commit https://osdn.net/projects/android-x86/scm/git/frameworks-av/commits/25de41f6c7be7cece9b324eb30cd7774544ad3c1 
+since no codec BOARD_USE_SAMSUNG_COLORFORMAT_NV21 := true and no video on YouTube.
+
 Start building:
 
     . build/envsetup.sh
